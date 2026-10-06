@@ -1,25 +1,40 @@
+import Reveal from '../components/Reveal'
+
 function Hero() {
   return (
     <section id="inicio" className="hero">
+
+      <div className="hero-overlay"></div>
+
       <div className="container hero-content">
-        <span className="hero-tag">
-          GASTRONOMIA SUL-AMERICANA
-        </span>
 
-        <h1>Sabores que<br />
-            contam histórias 
-        </h1>
+        <Reveal>
+          <span className="hero-tag">
+            AMÉRICA DO SUL
+          </span>
 
-        <p>
-          Descubra pratos, ingredientes e tradições que fazem parte
-          da identidade dos países da América do Sul.
-        </p>
+          <h1>
+            Descubra a
+            <br />
+            <span>Latinidade</span>
+          </h1>
 
-        <a href="#destaques" className="hero-button">
-          Explorar gastronomia
-        <span>→</span>
-        </a>
+          <p>
+            Uma viagem pelos países, sabores, culturas
+            e paisagens incríveis da América do Sul.
+          </p>
+
+          <a
+            href="#explore"
+            className="hero-btn"
+          >
+            Explorar a América do Sul
+            <span>→</span>
+          </a>
+        </Reveal>
+
       </div>
+
     </section>
   )
 }

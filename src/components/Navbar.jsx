@@ -1,8 +1,13 @@
 function Navbar() {
   return (
-    <nav className="navbar navbar-expand-lg bg-white sticky-top border-bottom">
+    <nav className="navbar navbar-expand-lg navbar-latinidade">
+
       <div className="container">
-        <a className="navbar-brand fw-bold" href="#inicio">
+
+        <a
+          className="navbar-brand"
+          href="#inicio"
+        >
           LATINIDADE
         </a>
 
@@ -18,40 +23,64 @@ function Navbar() {
           <span className="navbar-toggler-icon"></span>
         </button>
 
-        <div className="collapse navbar-collapse" id="menuPrincipal">
+        <div
+          className="collapse navbar-collapse"
+          id="menuPrincipal"
+        >
+
           <ul className="navbar-nav ms-auto">
+
             <li className="nav-item">
-              <a className="nav-link" href="#inicio">
+              <a
+                className="nav-link"
+                href="#inicio"
+              >
                 Início
               </a>
             </li>
 
             <li className="nav-item">
-              <a className="nav-link" href="#destaques">
-                Destaques
+              <a
+                className="nav-link"
+                href="#explore"
+              >
+                Explore
               </a>
             </li>
 
             <li className="nav-item">
-              <a className="nav-link" href="#sabores">
+              <a
+                className="nav-link"
+                href="#destaques"
+              >
+                Gastronomia
+              </a>
+            </li>
+
+            <li className="nav-item">
+              <a
+                className="nav-link"
+                href="#sabores"
+              >
                 Sabores
               </a>
             </li>
 
             <li className="nav-item">
-              <a className="nav-link" href="#curiosidades">
+              <a
+                className="nav-link"
+                href="#curiosidades"
+              >
                 Curiosidades
               </a>
             </li>
 
-            <li className="nav-item">
-              <a className="nav-link" href="#contato">
-                Contato
-              </a>
-            </li>
           </ul>
+
         </div>
+
       </div>
+
     </nav>
   )
 }

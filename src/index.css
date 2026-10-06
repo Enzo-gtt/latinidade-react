@@ -1423,3 +1423,530 @@ a {
   font-size: 21px;
   font-weight: 800;
 }
+
+/* =========================================
+   INDEX + GASTRONOMIA
+========================================= */
+
+
+/* HERO PRINCIPAL */
+
+.hero {
+  position: relative;
+
+  min-height: 650px;
+
+  display: flex;
+  align-items: center;
+
+  background:
+    url('/img/hero-gastronomia.png')
+    center / cover no-repeat;
+
+  overflow: hidden;
+}
+
+.hero-overlay {
+  position: absolute;
+  inset: 0;
+
+  background:
+    linear-gradient(
+      90deg,
+      rgba(25, 19, 15, 0.82) 0%,
+      rgba(25, 19, 15, 0.55) 45%,
+      rgba(25, 19, 15, 0.15) 100%
+    );
+}
+
+.hero-content {
+  position: relative;
+  z-index: 2;
+
+  padding-top: 80px;
+  padding-bottom: 80px;
+
+  color: white;
+}
+
+.hero-tag {
+  display: inline-block;
+
+  margin-bottom: 18px;
+
+  color: #e88b6e;
+
+  font-size: 13px;
+  font-weight: 800;
+
+  letter-spacing: 2px;
+}
+
+.hero h1 {
+  margin: 0;
+
+  max-width: 700px;
+
+  color: white;
+
+  font-size: clamp(52px, 7vw, 86px);
+  line-height: 0.95;
+
+  font-weight: 800;
+}
+
+.hero h1 span {
+  color: #e88b6e;
+}
+
+.hero p {
+  max-width: 570px;
+
+  margin: 28px 0;
+
+  color: rgba(255, 255, 255, 0.88);
+
+  font-size: 18px;
+  line-height: 1.7;
+}
+
+.hero-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 14px;
+
+  padding: 14px 23px;
+
+  border-radius: 999px;
+
+  background: #a6533f;
+
+  color: white;
+
+  text-decoration: none;
+
+  font-size: 14px;
+  font-weight: 700;
+
+  transition: 0.3s ease;
+}
+
+.hero-btn:hover {
+  background: #8f4938;
+  color: white;
+
+  transform: translateY(-2px);
+}
+
+.hero-btn span {
+  transition: 0.3s ease;
+}
+
+.hero-btn:hover span {
+  transform: translateX(4px);
+}
+
+
+/* =========================================
+   EXPLORE / INDEX ANTIGA
+========================================= */
+
+.explore {
+  padding: 100px 0 120px;
+
+  background: #f8f5ef;
+}
+
+.explore-header {
+  max-width: 720px;
+
+  margin: 0 auto 55px;
+
+  text-align: center;
+}
+
+.explore-header h2 {
+  margin: 10px 0 18px;
+
+  color: #2e2923;
+
+  font-size: clamp(34px, 5vw, 52px);
+  font-weight: 800;
+
+  line-height: 1.05;
+}
+
+.explore-header p {
+  margin: 0;
+
+  color: #746d64;
+
+  font-size: 16px;
+  line-height: 1.8;
+}
+
+.explore-card {
+  height: 100%;
+  min-height: 285px;
+
+  padding: 30px 25px;
+
+  display: flex;
+  flex-direction: column;
+
+  background: white;
+
+  border: 1px solid rgba(46, 41, 35, 0.08);
+  border-radius: 20px;
+
+  box-shadow:
+    0 12px 35px rgba(46, 41, 35, 0.07);
+
+  transition: 0.3s ease;
+}
+
+.explore-card:hover {
+  transform: translateY(-7px);
+
+  box-shadow:
+    0 18px 45px rgba(46, 41, 35, 0.12);
+}
+
+.explore-icon {
+  width: 55px;
+  height: 55px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  margin-bottom: 25px;
+
+  background: #f3ebe5;
+
+  border-radius: 16px;
+
+  font-size: 26px;
+}
+
+.explore-card h3 {
+  margin-bottom: 10px;
+
+  color: #2e2923;
+
+  font-size: 22px;
+  font-weight: 800;
+}
+
+.explore-card p {
+  margin-bottom: 24px;
+
+  color: #746d64;
+
+  font-size: 15px;
+  line-height: 1.7;
+
+  flex: 1;
+}
+
+.explore-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+
+  color: #a6533f;
+
+  text-decoration: none;
+
+  font-size: 14px;
+  font-weight: 800;
+}
+
+.explore-link span {
+  transition: 0.3s ease;
+}
+
+.explore-link:hover span {
+  transform: translateX(5px);
+}
+
+
+/* =========================================
+   FINAL / FRASE
+========================================= */
+
+.final-latinidade {
+  position: relative;
+
+  padding: 105px 0;
+
+  background:
+    linear-gradient(
+      135deg,
+      #a6533f,
+      #7f3e30
+    );
+
+  color: white;
+
+  text-align: center;
+}
+
+.final-content {
+  max-width: 750px;
+
+  margin: 0 auto;
+}
+
+.final-content > span {
+  display: block;
+
+  margin-bottom: 18px;
+
+  color: rgba(255, 255, 255, 0.72);
+
+  font-size: 13px;
+  font-weight: 800;
+
+  letter-spacing: 3px;
+}
+
+.final-content h2 {
+  margin-bottom: 20px;
+
+  color: white;
+
+  font-size: clamp(38px, 6vw, 62px);
+  font-weight: 800;
+
+  line-height: 1.05;
+}
+
+.final-content p {
+  max-width: 580px;
+
+  margin: 0 auto 30px;
+
+  color: rgba(255, 255, 255, 0.85);
+
+  font-size: 16px;
+  line-height: 1.7;
+}
+
+.final-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 12px;
+
+  padding: 13px 22px;
+
+  border-radius: 999px;
+
+  background: white;
+
+  color: #8f4938;
+
+  text-decoration: none;
+
+  font-weight: 800;
+
+  transition: 0.3s ease;
+}
+
+.final-btn:hover {
+  color: #8f4938;
+
+  transform: translateY(-3px);
+}
+
+
+/* =========================================
+   FOOTER
+========================================= */
+
+.footer {
+  padding: 55px 0 35px;
+
+  background: #211d19;
+
+  color: white;
+
+  text-align: center;
+}
+
+.footer h2 {
+  margin-bottom: 7px;
+
+  font-size: 24px;
+  font-weight: 800;
+
+  letter-spacing: 2px;
+}
+
+.footer p {
+  color: rgba(255, 255, 255, 0.62);
+}
+
+.footer-links {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+
+  gap: 25px;
+
+  margin: 28px 0;
+}
+
+.footer-links a {
+  color: rgba(255, 255, 255, 0.8);
+
+  text-decoration: none;
+
+  font-size: 14px;
+
+  transition: 0.2s;
+}
+
+.footer-links a:hover {
+  color: #e88b6e;
+}
+
+.footer-copy {
+  padding-top: 20px;
+
+  border-top:
+    1px solid rgba(255, 255, 255, 0.1);
+
+  font-size: 12px;
+}
+
+
+/* =========================================
+   RESPONSIVO
+========================================= */
+
+@media (max-width: 768px) {
+
+  .hero {
+    min-height: 580px;
+  }
+
+  .hero-content {
+    padding-top: 65px;
+    padding-bottom: 65px;
+  }
+
+  .hero h1 {
+    font-size: 52px;
+  }
+
+  .hero p {
+    font-size: 16px;
+  }
+
+  .explore {
+    padding: 75px 0 90px;
+  }
+
+  .explore-card {
+    min-height: 240px;
+  }
+
+  .final-latinidade {
+    padding: 80px 20px;
+  }
+
+}
+
+/* =========================================
+   CORREÇÕES FINAIS
+========================================= */
+
+/* HERO SEM IR PARA O MEIO EM TELAS GRANDES */
+
+.hero-content {
+  width: 100% !important;
+  max-width: none !important;
+
+  margin: 0 !important;
+
+  padding-left: clamp(35px, 6vw, 75px) !important;
+  padding-right: 30px !important;
+
+  text-align: left !important;
+}
+
+.hero-content .reveal {
+  width: 100%;
+  max-width: 650px;
+}
+
+
+/* TODOS OS CARDS EXPLORE COM MESMA ALTURA */
+
+.explore .row > div {
+  display: flex;
+}
+
+.explore .reveal {
+  width: 100%;
+  height: 100%;
+}
+
+.explore-card {
+  width: 100%;
+  height: 100%;
+
+  min-height: 270px;
+}
+
+.explore-card p {
+  flex: 1;
+}
+
+
+/* LINK DA GASTRONOMIA */
+
+.explore-link {
+  margin-top: auto;
+}
+
+
+/* ITENS QUE NÃO FORAM MIGRADOS */
+
+.explore-em-breve {
+  display: inline-flex;
+
+  align-self: flex-start;
+
+  margin-top: auto;
+
+  padding: 7px 12px;
+
+  border-radius: 999px;
+
+  background: #f2ece7;
+
+  color: #8b8178;
+
+  font-size: 12px;
+  font-weight: 800;
+
+  letter-spacing: 0.5px;
+}
+
+
+/* MOBILE */
+
+@media (max-width: 768px) {
+
+  .hero-content {
+    padding-left: 28px !important;
+    padding-right: 28px !important;
+  }
+
+  .explore-card {
+    min-height: 240px;
+  }
+
+}

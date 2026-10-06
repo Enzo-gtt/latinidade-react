@@ -2,23 +2,43 @@ import Reveal from '../components/Reveal'
 
 function Contato() {
   return (
-    <section id="contato" className="contato">
-      <div className="container">
-        <Reveal>
-          <div className="contato-content">
-            <span>LATINIDADE</span>
+    <section
+      id="final"
+      className="final-latinidade"
+    >
 
-            <h2>Uma viagem também começa pelo sabor.</h2>
+      <div className="container">
+
+        <Reveal>
+          <div className="final-content">
+
+            <span>
+              LATINIDADE
+            </span>
+
+            <h2>
+              Nossa diversidade é o que
+              nos torna únicos.
+            </h2>
 
             <p>
-              Conheça tradições e histórias através da gastronomia
-              da América do Sul.
+              Países, paisagens, culturas e sabores
+              conectados pela identidade da América do Sul.
             </p>
 
-            <a href="#inicio">Voltar ao início ↑</a>
+            <a
+              href="#inicio"
+              className="final-btn"
+            >
+              Voltar ao início
+              <span>↑</span>
+            </a>
+
           </div>
         </Reveal>
+
       </div>
+
     </section>
   )
 }

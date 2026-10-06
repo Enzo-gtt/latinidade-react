@@ -4,6 +4,7 @@ import Navbar from './components/Navbar'
 import Footer from './components/Footer'
 
 import Hero from './sections/Hero'
+import Explore from './sections/Explore'
 import Destaques from './sections/Destaques'
 import Sabores from './sections/Sabores'
 import Curiosidades from './sections/Curiosidades'
@@ -13,8 +14,6 @@ function App() {
   const [pratoSelecionado, setPratoSelecionado] = useState(null)
 
   function abrirPrato(pais) {
-    // cria um novo objeto toda vez,
-    // permitindo abrir o mesmo prato novamente
     setPratoSelecionado({ pais })
   }
 
@@ -24,6 +23,8 @@ function App() {
 
       <main>
         <Hero />
+
+        <Explore />
 
         <Destaques
           onConhecerPrato={abrirPrato}
