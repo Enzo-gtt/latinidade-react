@@ -58,4 +58,4 @@ npm run dev
 
 ## Site publicado
 
-https://superb-choux-417300.netlify.app/
+superb-choux-417300.netlify.app
