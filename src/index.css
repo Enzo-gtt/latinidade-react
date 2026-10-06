@@ -109,3 +109,77 @@ code {
   padding: 4px 8px;
   background: var(--code-bg);
 }
+
+/* HERO */
+
+.hero {
+  min-height: 650px;
+  display: flex;
+  align-items: center;
+
+  background:
+    linear-gradient(
+      90deg,
+      rgba(20, 16, 12, 0.92) 0%,
+      rgba(20, 16, 12, 0.65) 38%,
+      rgba(20, 16, 12, 0.12) 75%
+    ),
+    url('/img/hero-gastronomia.png');
+
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.hero-content {
+  max-width: 700px;
+  margin-left: 0;
+  text-align: left;
+  color: white;
+}
+
+.hero-tag {
+  display: inline-block;
+  color: white;
+  font-size: 13px;
+  font-weight: 700;
+  letter-spacing: 4px;
+  margin-bottom: 25px;
+}
+
+.hero h1 {
+  color: white !important;
+  font-size: clamp(55px, 6vw, 82px);
+  font-weight: 700;
+  line-height: 1.05;
+  max-width: 650px;
+  margin-bottom: 25px;
+}
+
+.hero p {
+  color: #f1ece5;
+  max-width: 600px;
+  font-size: 18px;
+  line-height: 1.7;
+}
+
+.btn-latinidade {
+  display: inline-block;
+  margin-top: 18px;
+  padding: 17px 32px;
+
+  background: #c45135;
+  color: white;
+
+  text-decoration: none;
+  font-weight: 700;
+
+  border-radius: 4px;
+  transition: 0.3s;
+}
+
+.btn-latinidade:hover {
+  background: #963a26;
+  color: white;
+  transform: translateY(-3px);
+}
