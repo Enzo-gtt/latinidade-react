@@ -183,3 +183,610 @@ code {
   color: white;
   transform: translateY(-3px);
 }
+
+/* ANIMAÇÃO AO ROLAR */
+
+.reveal {
+  opacity: 0;
+  transform: translateY(35px);
+  transition: opacity 0.7s ease, transform 0.7s ease;
+}
+
+.reveal-visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* DESTAQUES */
+
+.destaque-card {
+  height: 100%;
+  background: #fff;
+
+  border-radius: 16px;
+  overflow: hidden;
+
+  border: 1px solid rgba(46, 41, 35, 0.08);
+
+  box-shadow: 0 10px 30px rgba(46, 41, 35, 0.08);
+
+  transition:
+    transform 0.35s ease,
+    box-shadow 0.35s ease;
+}
+
+.destaque-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 20px 45px rgba(46, 41, 35, 0.15);
+}
+
+
+/* FOTO */
+
+.destaque-imagem {
+  height: 240px;
+  position: relative;
+  overflow: hidden;
+}
+
+.destaque-imagem img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+
+  transition: transform 0.5s ease;
+}
+
+.destaque-card:hover .destaque-imagem img {
+  transform: scale(1.06);
+}
+
+
+/* PAÍS SOBRE A FOTO */
+
+.pais-badge {
+  position: absolute;
+
+  left: 18px;
+  bottom: 18px;
+
+  padding: 7px 14px;
+
+  background: rgba(255, 255, 255, 0.92);
+  color: #2e2923;
+
+  border-radius: 30px;
+
+  font-size: 11px;
+  font-weight: 700;
+
+  letter-spacing: 1px;
+  text-transform: uppercase;
+
+  backdrop-filter: blur(5px);
+}
+
+
+/* CONTEÚDO */
+
+.destaque-card-content {
+  padding: 28px;
+}
+
+.destaque-card h3 {
+  margin: 0 0 12px;
+
+  color: #2e2923;
+
+  font-size: 26px;
+  font-weight: 700;
+}
+
+.destaque-card p {
+  min-height: 72px;
+
+  margin-bottom: 22px;
+
+  color: #746d64;
+
+  font-size: 14px;
+  line-height: 1.65;
+}
+
+
+/* BOTÃO */
+
+.card-action {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  padding: 12px 16px;
+
+  background: #f4ece7;
+  color: #8f4938;
+
+  border-radius: 8px;
+
+  text-decoration: none;
+
+  font-size: 13px;
+  font-weight: 700;
+
+  transition: 0.3s;
+}
+
+.card-action:hover {
+  background: #8f4938;
+  color: white;
+}
+
+.card-action span {
+  font-size: 18px;
+}
+
+.section-title {
+  font-size: 42px;
+  font-weight: 700;
+  margin-top: 14px;
+  margin-bottom: 18px;
+}
+
+.section-text {
+  color: #746d64;
+  max-width: 650px;
+  margin: 0 auto 55px;
+  line-height: 1.7;
+}
+
+/* mais espaço antes dos cards */
+.destaques .row {
+  padding-top: 15px;
+}
+
+/* hover um pouco mais suave */
+.destaque-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 18px 40px rgba(40, 30, 20, 0.13);
+}
+
+.destaques {
+  padding: 110px 0;
+  background:
+    radial-gradient(circle at top right, #eee0d5 0%, transparent 35%),
+    #f8f5ef;
+}
+
+.destaques-intro {
+  display: grid;
+  grid-template-columns: 1.2fr 1fr;
+  gap: 80px;
+
+  align-items: end;
+
+  margin-bottom: 65px;
+}
+
+.section-tag {
+  display: inline-block;
+
+  color: #8f4938;
+
+  font-size: 11px;
+  font-weight: 700;
+
+  letter-spacing: 3px;
+
+  margin-bottom: 18px;
+}
+
+.section-title {
+  margin: 0;
+
+  font-size: clamp(40px, 5vw, 62px);
+  line-height: 1.05;
+  font-weight: 700;
+
+  color: #2e2923;
+}
+
+.destaques-descricao {
+  display: flex;
+  gap: 20px;
+  align-items: flex-start;
+}
+
+.linha-destaque {
+  width: 45px;
+  height: 3px;
+
+  background: #8f4938;
+
+  margin-top: 10px;
+
+  flex-shrink: 0;
+}
+
+.destaques-descricao p {
+  margin: 0;
+
+  color: #746d64;
+
+  font-size: 15px;
+  line-height: 1.8;
+}
+
+
+/* CELULAR */
+
+@media (max-width: 767px) {
+
+  .destaques {
+    padding: 75px 0;
+  }
+
+  .destaques-intro {
+    display: block;
+    margin-bottom: 45px;
+  }
+
+  .section-title {
+    margin-bottom: 25px;
+  }
+
+  .destaques-descricao {
+    gap: 14px;
+  }
+
+  .linha-destaque {
+    width: 30px;
+  }
+
+  .sabores {
+    margin-top: -25px;
+    padding: 90px 0 80px;
+
+    border-radius: 28px 28px 0 0;
+  }
+}
+
+.destaques-titulo {
+  padding-left: 0;
+  border-left: none;
+}
+
+.section-tag {
+  display: inline-block;
+  padding: 7px 13px;
+
+  background: #8f4938;
+  color: white;
+
+  border-radius: 30px;
+
+  font-size: 10px;
+  font-weight: 700;
+  letter-spacing: 2.5px;
+}
+
+.section-title {
+  margin-top: 18px;
+
+  font-size: clamp(46px, 5vw, 66px);
+  line-height: 1.02;
+
+  color: #2e2923;
+}
+
+@media (max-width: 767px) {
+  .destaques-titulo {
+    padding-left: 18px;
+    border-left-width: 4px;
+  }
+
+  .section-title {
+    font-size: 42px;
+  }
+}
+
+.hero-button {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+
+  margin-top: 22px;
+  padding: 12px 18px;
+
+  background: rgba(166, 83, 63, 0.92);
+  color: white;
+
+  text-decoration: none;
+  font-size: 14px;
+  font-weight: 700;
+
+  border-radius: 999px;
+
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.18);
+
+  transition: 0.3s;
+}
+
+.hero-button:hover {
+  background: #8f4938;
+  color: white;
+  transform: translateY(-2px);
+}
+
+.hero-button span {
+  font-size: 18px;
+  transition: transform 0.3s;
+}
+
+.hero-button:hover span {
+  transform: translateX(4px);
+}
+
+/* SABORES */
+
+.sabores {
+  position: relative;
+
+  margin-top: -45px;
+  padding: 120px 0 110px;
+
+  background:
+    linear-gradient(
+      180deg,
+      #302923 0%,
+      #211d19 100%
+    );
+
+  color: white;
+
+  border-radius: 45px 45px 0 0;
+
+  box-shadow: 0 -15px 40px rgba(46, 41, 35, 0.12);
+
+  z-index: 2;
+}
+
+.sabor-card {
+  height: 130px;
+  padding: 22px;
+  border: 1px solid rgba(255,255,255,.12);
+  border-radius: 12px;
+  background: rgba(255,255,255,.05);
+  transition: .3s;
+}
+
+.sabor-card:hover {
+  transform: translateY(-5px);
+  background: rgba(255,255,255,.1);
+}
+
+.sabor-card span {
+  color: #d68b78;
+  font-size: 12px;
+  font-weight: 700;
+}
+
+.sabor-card h3 {
+  color: white;
+  font-size: 20px;
+  margin-top: 8px;
+}
+
+
+/* CURIOSIDADES */
+
+.curiosidades {
+  padding: 100px 0;
+  background: #f8f5ef;
+}
+
+.curiosidades h2 {
+  font-size: clamp(40px, 5vw, 58px);
+  margin-top: 12px;
+}
+
+.curiosidade-card {
+  height: 100%;
+  padding: 30px;
+  background: white;
+  border-radius: 14px;
+  box-shadow: 0 10px 30px rgba(0,0,0,.06);
+}
+
+.curiosidade-card span {
+  color: #a6533f;
+  font-weight: 700;
+  font-size: 12px;
+}
+
+.curiosidade-card p {
+  margin-top: 20px;
+  line-height: 1.7;
+  color: #746d64;
+}
+
+
+/* CONTATO */
+
+.contato {
+  padding: 100px 0;
+  background: #a6533f;
+  color: white;
+}
+
+.contato-content {
+  max-width: 700px;
+}
+
+.contato h2 {
+  color: white;
+  font-size: clamp(40px, 5vw, 60px);
+  margin: 15px 0;
+}
+
+.contato p {
+  color: #f3ddd7;
+}
+
+.contato a {
+  display: inline-block;
+  margin-top: 18px;
+  color: white;
+  font-weight: 700;
+  text-decoration: none;
+  border-bottom: 2px solid white;
+}
+
+
+/* FOOTER */
+
+.footer {
+  padding: 28px 0;
+  background: #211e1a;
+  color: white;
+}
+
+.footer-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.footer span {
+  color: #aaa39b;
+  font-size: 13px;
+}
+
+@media (max-width: 767px) {
+  .sorteado {
+    display: flex;
+    margin: 15px 0 0;
+    width: fit-content;
+  }
+
+  .footer-content {
+    flex-direction: column;
+    gap: 8px;
+    text-align: center;
+  }
+}
+
+.sabores {
+  position: relative;
+
+  margin-top: -45px;
+  padding: 120px 0 110px;
+
+  background:
+    linear-gradient(
+      180deg,
+      #302923 0%,
+      #211d19 100%
+    );
+
+  color: white;
+
+  border-radius: 45px 45px 0 0;
+
+  box-shadow: 0 -15px 40px rgba(46, 41, 35, 0.12);
+
+  z-index: 2;
+}
+
+.navbar {
+  background: rgba(255, 255, 255, 0.96) !important;
+  backdrop-filter: blur(10px);
+
+  padding: 16px 0;
+
+  box-shadow: 0 4px 20px rgba(46, 41, 35, 0.07);
+}
+
+.navbar-brand {
+  font-weight: 700;
+  letter-spacing: 3px;
+  color: #2e2923 !important;
+}
+
+.nav-link {
+  position: relative;
+
+  margin: 0 8px;
+
+  color: #4f4841 !important;
+  font-size: 14px;
+  font-weight: 600;
+
+  transition: 0.3s;
+}
+
+.nav-link:hover {
+  color: #a6533f !important;
+}
+
+.nav-link::after {
+  content: "";
+
+  position: absolute;
+  left: 50%;
+  bottom: 2px;
+
+  width: 0;
+  height: 2px;
+
+  background: #a6533f;
+
+  transition: 0.3s;
+  transform: translateX(-50%);
+}
+
+.nav-link:hover::after {
+  width: 70%;
+}
+
+/* AJUSTE FINAL - SABORES */
+
+.sabores .sabores-title {
+  color: #ffffff !important;
+}
+
+.sabores .btn-sabor {
+  border: none !important;
+  padding: 13px 22px !important;
+  border-radius: 999px !important;
+
+  background: #a6533f !important;
+  color: white !important;
+
+  font-weight: 700 !important;
+  cursor: pointer;
+
+  transition: 0.3s;
+}
+
+.sabores .btn-sabor:hover {
+  background: #8f4938 !important;
+  transform: translateY(-2px);
+}
+
+.sorteado {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+
+  margin-left: 15px;
+  padding: 11px 17px;
+
+  background: white;
+  color: #2e2923;
+
+  border-radius: 999px;
+}
+
+.sorteado span {
+  color: #a6533f;
+}

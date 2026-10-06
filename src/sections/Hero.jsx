@@ -15,8 +15,9 @@ function Hero() {
           da identidade dos países da América do Sul.
         </p>
 
-        <a href="#destaques" className="btn-latinidade">
-          Conhecer sabores
+        <a href="#destaques" className="hero-button">
+          Explorar gastronomia
+        <span>→</span>
         </a>
       </div>
     </section>
