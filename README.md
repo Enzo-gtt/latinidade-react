@@ -1,16 +1,57 @@
-# React + Vite
+# Latinidade | Landing Page em React
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Parte 2 individual do trabalho de Desenvolvimento Frontend II.
 
-Currently, two official plugins are available:
+## Autor
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+SEU NOME COMPLETO
 
-## React Compiler
+## Origem
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+- Projeto original: Latinidade
+- Página que desenvolvi na Parte 1: `gastronomia.html`
+- Página utilizada na fusão: `index.html`
+- Autor(a) original do index.html: COLOQUE O NOME AQUI
+- Os arquivos originais estão na pasta `referencia-html/`
 
-## Expanding the ESLint configuration
+## Sobre o projeto
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+Esta versão transforma o `index.html` original e a página de Gastronomia em uma única Landing Page desenvolvida em React.
+
+A página reúne apresentação da América do Sul, áreas do projeto, destaques gastronômicos, pratos tradicionais dos 12 países, curiosidades e informações sobre cada prato.
+
+## Tecnologias
+
+- React
+- Vite
+- JavaScript
+- Bootstrap
+- CSS
+- Git e GitHub
+
+## Funcionalidades
+
+- Landing Page de rolagem única
+- Navegação por âncoras
+- Layout responsivo
+- Cards criados com arrays e `map()`
+- Modal com detalhes dos pratos
+- Animações de entrada durante a rolagem
+- Integração dos destaques com os respectivos pratos
+
+## Seções da Landing Page
+
+| Seção | Origem |
+|---|---|
+| Hero | index.html |
+| Explore | index.html |
+| Destaques gastronômicos | gastronomia.html |
+| Sabores dos países | gastronomia.html |
+| Curiosidades | gastronomia.html |
+| Chamada final | index.html |
+
+## Como executar
+
+```bash
+npm install
+npm run dev
