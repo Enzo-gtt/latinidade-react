@@ -55,3 +55,7 @@ A página reúne apresentação da América do Sul, áreas do projeto, destaques
 ```bash
 npm install
 npm run dev
+
+## Site publicado
+
+https://superb-choux-417300.netlify.app/
