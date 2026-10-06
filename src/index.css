@@ -1408,3 +1408,18 @@ a {
   font-size: 15px;
   line-height: 1.7;
 }
+
+.curiosidades-intro {
+  max-width: 600px;
+  margin: 18px auto 0;
+  color: #746d64;
+}
+
+.curiosidade-card h3 {
+  margin: 20px 0 10px;
+
+  color: #2e2923;
+
+  font-size: 21px;
+  font-weight: 800;
+}
